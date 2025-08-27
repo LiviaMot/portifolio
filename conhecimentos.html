@@ -7,6 +7,8 @@
     <title>Conhecimentos</title>
     <!-- Font Awesome via CDN -->
     <script src="https://kit.fontawesome.com/066c31a7be.js" crossorigin="anonymous"></script>
+    <!-- DEVICON -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   </head>
   <body>
     <!-- Mudar depois o nome do criativo para o que ele for -->
@@ -14,33 +16,115 @@
       <nav>
         <ul>
           <li><a href="./index.html">Sobre Mim</a></li>
-          <li><a href="./conhecimentos.html">Conhecimentos</a></li>
+          <li><a href="./conhecimentos.html" class="active">Conhecimentos</a></li>
           <li><a href="./criativo.html">Criativo</a></li>
         </ul>
       </nav>
     </header>
     <!-- Conteúdo -->
     <main>
-      <section>
+      <!-- Cards -->
+      <section class="skills">
         <h1>Meus Conhecimentos</h1>
         <!-- C++, C#, Banco de Dados, HTML, CSS, JavaScript -->
-        <!-- Linguagens -->
-        <div>
-
-        </div>
-        <!-- Desenvolvimento Web -->
-        <div>
-
-        </div>
-        <!-- Banco de Dados -->
-        <div>
-        
+        <div class="cards-container">
+          <!-- Linguagens -->
+          <article class="skill-card">
+            <h2>Linguagens</h2>
+            <div class="icon-group">
+              <i class="devicon-csharp-plain"></i>
+              <i class="devicon-cplusplus-plain"></i>
+            </div>
+            <p>
+              Gosto de usar C# para construir a lógica de programas e resolver problemas. Aprendi os fundamentos da Programação Orientada a Objetos e como organizar o código para que ele seja claro e funcional. Também tive uma introdução à linguagem C++.
+            </p>
+            <!-- Nivel de proficiência -->
+            <div class="proficiency-tags">
+              <div class="pill-expand">
+                <i class="devicon-csharp-plain"></i>
+                <span class="text">Nível Acadêmico</span>
+              </div>
+              <div class="pill-expand">
+                <i class="devicon-cplusplus-plain"></i>
+                <span class="text">Conhecimento Introdutório</span>
+              </div>
+            </div>
+          </article>
+          <!-- Desenvolvimento Web -->
+          <article class="skill-card">
+            <h2>Desenvolvimento Web</h2>
+            <div class="icon-group">
+              <i class="fa-brands fa-html5"></i>
+              <i class="devicon-css3-plain"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+            <p>
+              Uso HTML para criar a estrutura e o conteúdo de páginas web, e o CSS para cuidar de toda a parte visual, como cores, fontes e layouts. Sei como organizar os estilos para que o site se adapte bem a telas de computador e celular. Estou no início da minha jornada com JavaScript, aprendendo a criar as primeiras interações na página.
+            </p>
+            <!-- Nivel de proficiência -->
+            <div class="proficiency-tags">
+              <div class="pill-expand">
+                <i class="fa-brands fa-html5"></i>
+                <span class="text">Nível Acadêmico</span>
+              </div>
+              <div class="pill-expand">
+                <i class="devicon-css3-plain"></i>
+                <span class="text">Nível Acadêmico</span>
+              </div>
+              <div class="pill-expand">
+                <i class="fa-brands fa-square-js"></i>
+                <span class="text">Básico / Aprendendo Ativamente</span>
+              </div>
+            </div>
+          </article>
+          <!-- Banco de Dados -->
+          <article class="skill-card">
+            <h2>Banco de Dados</h2>
+            <div class="icon-group">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <p>
+              Entendo como um banco de dados é essencial para guardar e buscar as informações de uma aplicação. Com a linguagem SQL, consigo escrever as consultas necessárias para gerenciar os dados que um programa precisa para funcionar.
+            </p>
+            <!-- Nivel de proficiência -->
+            <div class="proficiency-tags">
+              <div class="pill-expand">
+                <i class="devicon-mysql-original"></i>
+                <span class="text">Nível Acadêmico</span>
+              </div>
+            </div>
+          </article>    
         </div>
       </section>
       <!-- Seção Projetos -->
-      <section>
+      <section class="projects">
         <h1>Projetos</h1>
+        <!-- Imagem: Um GIF da sua Calculadora funcionando.
+        Título: Calculadora de Gorjetas
+        Descrição: -----------------------
+        Pílulas: HTML, CSS, JavaScript
+        Botões: Ver no GitHub (link para o repo) e Demo ao Vivo (link para o GitHub Pages). -->
+        <article>
+          <img src="./assets/Calculadora-de-gorjetas.png" alt="Imagem estática da calculadora de gorjetas.">
+          <strong class="title">Título do Projeto:</strong>
+          <h2>Calculadora de Gorjetas</h2>
+          <strong class="title">Descrição:</strong>
+          <p>
+            Um projeto de estudo focado em aplicar os fundamentos do desenvolvimento front-end para criar uma ferramenta prática e funcional. A aplicação foi construída com HTML para a estrutura, CSS para a estilização e JavaScript para dar vida à calculadora.
 
+            O desenvolvimento deste projeto foi essencial para praticar habilidades importantes como a manipulação do DOM para exibir os resultados, o gerenciamento de eventos para capturar o envio do formulário, e a implementação de lógicas de validação para garantir que os dados inseridos pelo usuário sejam corretos.
+          </p>
+          <!-- Pílula -->
+          <i class="fa-brands fa-html5 pill"></i>
+          <i class="devicon-css3-plain pill"></i>
+          <i class="fa-brands fa-square-js pill"></i>
+          <!-- Botões de Ação -->
+          <div class="project-links">
+            <a href="https://github.com/LiviaMot/calculadora-de-gorjetas" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i>Ver no GitHub ↗</a>
+            
+            <a href="https://liviamot.github.io/calculadora-de-gorjetas/" target="_blank" class="btn-link">Demo ao Vivo ↗</a>
+          </div>
+        </article>
       </section>
     </main>
     <!-- Rodapé -->

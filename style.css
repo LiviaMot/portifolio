@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+/* Global */
+
+
+nav ul li a.active {
+  color: #007BFF; /* Uma cor de destaque */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* Page: Sobre Mim */
 
 /* Page: Conhecimentos */
