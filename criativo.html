@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Criativo</title>
-    <!-- Font Awesome via CDN -->
-    <script src="https://kit.fontawesome.com/066c31a7be.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <!-- Menu -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Sobre Mim</a></li>
-          <li><a href="./conhecimentos.html">Conhecimentos</a></li>
-          <li><a href="./criativo.html" class="active">Criativo</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Conteúdo -->
-    <main>
 
-    </main>
-    <!-- Rodapé -->
-    <footer>
-      <p>&copy Lívia Mota. Todos os direitos reservados.</p>
-      <p>Conecte-se comigo:</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="icon" href="./assets/l-solid.svg" type="image/svg+xml">
+  <title>Criativo</title>
+  <!-- Font Awesome via CDN -->
+  <script src="https://kit.fontawesome.com/066c31a7be.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Menu -->
+  <header id="header" class="glass">
+    <nav id="nav-menu">
       <ul>
-        <li><a href="https://www.linkedin.com/in/livia-mota-tavares-087453208/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="https://github.com/LiviaMot" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+        <li><a href="./sobre-mim.html" class="nav-link" id="link-sobre">Sobre Mim</a></li>
+        <li><a href="./conhecimentos.html" class="nav-link" id="link-conhecimentos">Conhecimentos</a></li>
+        <li><a href="./criativo.html" class="nav-link active" id="link-criativo">Criativo</a></li>
       </ul>
-    </footer>
+    </nav>
+  </header>
 
-    <script src="./script.js"></script>
-  </body>
+  <!-- Conteúdo -->
+  <main id="main-content">
+    <section class="creative-section">
+      <h1>Gerador de Citações</h1>
+      <p class="subtitle">Um pequeno projeto em JavaScript para exibir citações aleatórias.</p>
+
+      <div class="quote-container">
+        <p class="quote-text" id="quote-text">
+          Clique no botão abaixo para gerar uma citação inspiradora!
+        </p>
+        <p class="quote-author" id="quote-author"></p>
+      </div>
+
+      <button id="new-quote-btn" class="footer-btn">
+        <i class="fa-solid fa-arrows-rotate"></i> Gerar Nova Citação
+      </button>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="footer">
+    <p>© Lívia Mota. Todos os direitos reservados.</p>
+    <p>Conecte-se comigo:</p>
+    <ul id="social-links">
+      <li><a href="https://www.linkedin.com/in/livia-mota-tavares-087453208/" target="_blank" class="footer-btn"><i
+            class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/LiviaMot" target="_blank" class="footer-btn"><i class="fa-brands fa-github"></i>
+          GitHub</a></li>
+    </ul>
+  </footer>
+
+  <script src="./script/script.js"></script>
+</body>
+
 </html>
